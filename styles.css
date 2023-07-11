@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  background-color: #f9f1f0;
+  padding: 12px;
+  gap: 36px;
+}
+
+.board {
+  max-width: 600px;
+  max-height: max-content;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 24px 24px 24px;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #a52a2a;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Lobster", sans-serif;
+  color: gold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  grid-auto-columns: auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  aspect-ratio: 1 / 1;
+}
+
+.funcContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 20%;
+  max-width: 250px;
+}
+
+label {
+  font-size: 700;
+}
+
+.formSquareCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.squareCount {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.btn {
+  width: 125px;
+  padding: 10px 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: #a52a2a;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.instructionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: max-content;
+  padding: 10px;
+  width: 20%;
+}
+
+.pencilStatus {
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.instructions {
+  max-width: 70ch;
+  text-align: justify;
+  line-height: 1.75rem;
+  letter-spacing: 0.02rem;
+}
+
+.instructions,
+.funcContainer {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 8px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    height: 100%;
+  }
+
+  body {
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .board {
+    margin: auto 24px;
+  }
+
+  .board,
+  .instructionsContainer,
+  .funcContainer {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .instructions {
+    width: 100%;
+  }
+}
