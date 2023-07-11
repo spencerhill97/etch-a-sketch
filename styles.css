@@ -54,7 +54,8 @@ body {
   align-items: center;
   gap: 20px;
   width: 20%;
-  max-width: 250px;
+  padding-top: 12px;
+  padding-bottom: 20px;
 }
 
 label {
@@ -99,7 +100,6 @@ label {
   justify-content: center;
   gap: 10px;
   height: max-content;
-  padding: 10px;
   width: 20%;
 }
 
@@ -115,10 +115,11 @@ label {
 }
 
 .instructions {
-  max-width: 70ch;
-  text-align: justify;
-  line-height: 1.75rem;
-  letter-spacing: 0.02rem;
+  padding: 25px !important;
+}
+
+li {
+  margin-bottom: 12px;
 }
 
 .instructions,
@@ -156,6 +157,10 @@ label {
   .funcContainer {
     height: 100%;
     width: 100%;
+  }
+
+  .funcContainer {
+    max-width: 250px;
   }
 }
 

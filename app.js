@@ -23,12 +23,11 @@ const pencilStatus = document.createElement("span");
 pencilStatus.innerText = "PENCIL STATUS";
 pencilStatus.classList.add("pencilStatus");
 
-const instructions = document.createElement("p");
-instructions.innerText =
-  "To draw on the Etch-A-Sketch you have to click on the board. \
-   The pencil status will be green if the pen is active and will be red if the pen is inactive. \
-   Change the number of squares that are rendered on the canvas to change teh width of the pencil. \
-   The buttons on the left will change the color of the pencil, use the eraser, or clear the canvas.";
+const instructions = document.createElement("ul");
+instructions.innerHTML = `<li>To draw on the Etch-A-Sketch you have to click on the board.</li>
+   <li>The pencil status will be green if the pen is active and will be red if the pen is inactive.</li>
+   <li>Change the number of squares that are rendered on the canvas to change the width of the pencil.</li>
+   <li>The buttons on the left will change the color of the pencil, use the eraser, or clear the canvas.</li>`;
 instructions.classList.add("instructions");
 
 instructionsContainer.append(pencilStatus);
