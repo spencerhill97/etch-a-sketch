@@ -20,7 +20,7 @@ https://spencerhill97.github.io/etch-a-sketch/
           
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![screenshot](https://github.com/spencerhill97/etch-a-sketch/assets/113248092/cf31ce9c-dc61-4b3b-9ff3-b6168c5d0e61)
 
 
 ## Features
